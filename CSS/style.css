@@ -1,0 +1,105 @@
+/*header*/
+h1 {
+    font-size: 40px;
+    font-family: Georgia:; color: rgb(0, 128, 255);
+    text-align: center;
+  }
+    
+/*paragraphs*/
+p{
+	font-family: Arial, Helvetica, sans-serif;color:black; }
+
+/*navbar teal I think*/	
+ul{color:teal;}
+
+/*body colour*/
+<body  bgcolor="#C6DEFF"> </body>
+
+/*unvisited link for navbar keeps it blue*/
+a:link {
+	color:rgb(51, 153, 255);
+}
+/*visited link for navbar keeps it blue*/
+a:visited{
+	color:rgb(51, 153, 255);
+}
+/*hover link on navbar it turns it a darker blue*/
+ a:hover {
+    color: rgb(0,128,255);
+} 
+
+
+/*navbar info chnages it up and down*/
+
+
+ul {   
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    overflow: hidden;
+    background-color:rgb(179, 217, 255); 
+    top:0;
+    right:0;
+    left:90px;
+
+}
+/*makes it horizontal*/
+li {
+    float: left;
+}
+
+/*makes the navbar have no underline and horizontal and the padding is the size*/
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 75px;
+	text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: rgb(179, 217, 255);
+}
+
+/*selectors use them later*/
+
+#firstp { 
+ }
+
+.header {
+
+}
+.image {
+
+}
+
+.footer {
+	background-color:rgb(179, 217, 255);
+	bottom:0;
+   width:100%;
+
+	}
+
+#blue {color:rgb(51, 153, 255);
+	left:0px;
+	
+
+}
+
+#footer2 {color:rgb(51, 153, 255);
+		right:0px;
+		bottom:0px;
+
+}
+
+/*navbar highlights when on page*/
+#nav_bar ul li a.active-page { font-weight:bold;
+
+}
+
+.logo {float:left;
+	  display: inline-block;
+
+}

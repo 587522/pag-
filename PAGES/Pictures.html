@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
+
+		<script>
+
+	function Game() {
+        var integer = parseInt(prompt("What's your first number?"));
+        var integertwo = parseInt(prompt("What's your second number?"));
+
+        if(integer > integertwo) {
+            alert(integer);
+        }
+
+        else if(integer < integertwo) {
+            alert(integertwo)
+        }
+
+        else if(integer == integertwo){
+            alert("They are equal in value")
+        }
+        
+        else{
+            alert("That's not a number!")
+        }
+
+        }
+
+function FizzBuzz() {
+for(var i = 1; i <= 15; i++) {
+        
+    if(i % 3 == 0 && i % 5 == 0){
+        alert("FizzBuzz") 
+    
+    
+    }else if(0 == i % 3){
+        alert("Fizz")
+
+    }else if(0 == i % 5) {
+        alert("Buzz") 
+    
+    }else if(i % 3 != 0 || i % 5 != 0) {
+
+        alert(i);
+    }
+
+
+    
+    }
+	
+	}
+
+	function MarkBook() {
+	var markone = parseInt(prompt("What's your first mark?"));
+    var marktwo = parseInt(prompt("What's your second mark?"));
+    var markthree = parseInt(prompt("What's your third mark?"));
+    var markfour = parseInt(prompt("What's your last mark?"));
+
+    var average = (markone + marktwo + markthree + markfour)/4;
+
+
+    if(average >= 90 && average <= 100) {
+        alert("Good job! That's an A! You're average is " + average);
+
+    }else if (average >= 70 && average <= 89) {
+
+        alert("Yay! That's a B! You're average is " + average);
+
+    }else if (average >= 60 && average <= 69) {
+
+        alert("Sadly, it's a C. You're average is " + average);
+
+    }else if (average >= 50 && average <= 59) {
+
+        alert("Come on, you can do better! You're average is " + average);
+
+    }else{
+
+        alert("I'm sorry, bad news. You failed. You're average is " + average);
+
+    } 
+
+	}
+
+	function password() {
+		
+    for (var i = 1; i <=3; i++) {
+    var password = prompt("What's your password?")
+    
+
+    if(password == "Hi") {
+        alert("Wowowow!");
+        
+    }
+
+    else{
+        alert ("Stop trying to be a hacker, you suck!"); 
+        
+
+    }
+        
+        }
+	}
+
+	function Colour() {
+		 var gotit = true;
+    
+
+
+    while (gotit) {var favColor = prompt("What's your fav colour");
+        
+    if(favColor === "red") {
+        alert("Me too!");
+
+    }else if (favColor == "blue") {
+
+        alert("Ewww yuckkyy!!!!");
+
+    }else if (favColor == "orange") {
+
+        alert("Yipee what an amazing colour!");
+   }else if (favColor == "q") {
+
+    gotit = false;
+
+    }else {
+
+        alert("That colour doesn't exist! Or it sucks!");
+
+    }
+
+   }
+
+	}
+
+        </script>
+	</head>
+
+	<body  bgcolor="#C6DEFF">
+
+	<!--logo-->
+	<div class="logo">
+		<img src="..\IMAGES\Hsupergood.png" alt="logo" height="60" width="60">
+	</div>
+
+
+	<!--navbaroptions-->
+	<div id="nav_bar">
+		<ul>
+			<li> <a href="../index.html">Humyra</a><li>
+			<li> <a href="..\PAGES/Pictures.html" class="active-page"> Portfolio</a></li>
+			<li> <a href="..\PAGES/words.html">Cool Links</a></li>
+			<li> <a href="..\PAGES/Blog.html">Blog</a></li>
+			<li> <a href="..\PAGES/AboutMe.html">About Me</a></li>
+			<li> <a href="..\PAGES/ContactMe.html">Contact Me</a></li>
+		</ul>
+	</div>
+
+	<div style="text-align: center">
+
+
+	<br>
+	<br>
+	<br>
+
+	<h1><center>Portfolio</center></h1>
+	<!--pictures-->
+	<br>
+	<h2>Buttons that lead to a game</h2>
+	<button onclick="Game()">Displays the larger interger.</button> 
+	<br>
+	<br>
+	<button onclick="FizzBuzz()">FizzBuzz.</button> 
+	<br>
+	<br>
+	<button onclick="MarkBook()">Mark Book</button> 
+	<br>
+	<br>
+	<button onclick="password()">Guess the password</button> 
+	<br>
+	<br>
+	<button onclick="Colour()">What's your fave colour?!</button> 
+	<br>
+	<br>
+
+	<img src="../IMAGES/prettytower.jpg" alt="prettytower" height="400" width="600">
+	<p>Some pictures of my work. Coming soon.</p> 
+	<br>
+
+	<img src="../IMAGES/marshamllows.jpg" alt="marshmallows" height="600" width="600">
+	<p> My work.</p>
+
+	<img src="../IMAGES/smarties.jpg" alt="smarties" height="400" width="600">
+	<p>  My work.</p>
+
+	<img src="../IMAGES/pop.jpg" alt="pop" height="500" width="600">
+	<p>  My work. </p>
+
+	<img src="../IMAGES/pretty.jpg" alt="pretty" height="500" width="600">
+	<p>  My work.</p>
+
+	<p> Some of my skills, and hobbies</p>
+	
+
+	<a href= "url">Link to my resume. DON'T CLICK, I WILL ATTACH RESUME LATER</a>
+
+	<!--footer-->
+	<footer>
+		<div class="footer">
+			<p id="blue">Humyra Taifoor</p>
+			<p id="footer2">2017-2018</a>.</p>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
