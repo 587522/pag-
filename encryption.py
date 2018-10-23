@@ -22,6 +22,8 @@ def encryption():
     fobject = open('original.txt', 'w')
     x = input("Enter text: ")
     output = []
+    finaloutput = []
+    finalword = []
     str(fobject.write(x))
     fobject.close()
     
@@ -31,17 +33,35 @@ def encryption():
     for character in x:
           number = ord(character) - 96
           output.append(number)
-          print (output)#can remove this later
-                  
-    if key <=26:
-          newnumbers = output.append(key)
+          
+          #output2 = ''.join(str(output))
+    print (output)#can remove this later
+          
+    #print(output2)
+    for character in output:
+          character = int(character) + int(key)
+          finaloutput.append(character)
+    print(finaloutput)
+    
+    for i in finaloutput: 
+          print(chr(i))
+          finalword.append((chr(i)))
+          
+    print(finalword)
+    
+    print(''.join(finalword))
+    
+    """
+
           y = int(newnumbers.append(96))
           final_output = chr(y)
           output = ''.join()
-          encrypt.write(str(final_output))
+          encrypt.write(str(a))
+          """
 
     encrypt.close()
 encryption()              
+              
     
 
 
