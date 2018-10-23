@@ -44,11 +44,8 @@ def encryption():
     print(finaloutput)
     
     for i in finaloutput: 
-          print(chr(i))
-          finalword.append((chr(i)))
-          
+         finalword.append((chr(i)))
     print(finalword)
-    
     print(''.join(finalword))
     
     """
@@ -61,7 +58,7 @@ def encryption():
 
     encrypt.close()
 encryption()              
-              
+    
     
 
 
