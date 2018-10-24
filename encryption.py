@@ -17,7 +17,7 @@ def encrypt():
     >>>looc si sihtoy
     """
     #fobject = open('original.txt', 'w') #opens the original.txt file and allows the option to write to it
-    x = input("Enter text: ")           #allows the user to input a phrase
+    x = input("Enter text: ")            #allows the user to input a phrase
     #str(fobject.write(x))               #writes the inputted phrase to the file
     #fobject.close()                     #closes the file
     
@@ -42,13 +42,13 @@ def encryption():
     2
     >>>jgnnq
     """
-    #fobject = open('original.txt', 'w') #opens the original.txt file and allows the option to write to it
+    #fobject = open('original.txt', 'w')#opens the original.txt file and allows the option to write to it
     x = input("Enter text: ")           #allows the user to input a phrase
     output = []                         #this allows the appending of numbers to these variables later
     finaloutput = []
     finalword = []
-    #str(fobject.write(x))               #writes the inputted phrase to the file
-    #fobject.close()                     #closes the file
+    #str(fobject.write(x))              #writes the inputted phrase to the file
+    #fobject.close()                    #closes the file
     
     encrypt = open('encrypted.txt','w') #opens the encrypted.txt file and allows the option to write to it
     key = int(input("Enter key (numbers 1-26): "))#asks for a key to shift the numbers
@@ -64,10 +64,10 @@ def encryption():
     x = finaloutput
      
     for i in x:                         #a for loop for every i in the variable x
-        finalword.append(chr(i)) #turns the numbers back into letters and appends them to the variable finalword
+        finalword.append(chr(i))        #turns the numbers back into letters and appends them to the variable finalword
     y = finalword
-    newword = ''.join(y)        #turns the list of the letters into a string
-    print("Your encrypted message is: " +newword)                      #prints the encrypted message
+    newword = ''.join(y)                #turns the list of the letters into a string
+    print("Your encrypted message is: " +newword)#prints the encrypted message
     encrypt.write(newword)              #writes the encrypted message to the file
     encrypt.close()                     #closes the file
 
@@ -104,26 +104,26 @@ def decryption():
     >>>hello
     """
     decryption = open('encrypted.txt', 'r') #opens the file encrypted.txt
-    x = decryption.read()               #assigns the variable x to whatever items are in the file
-    output = []                         #this allows the appending of numbers to these variables later  
+    x = decryption.read()                #assigns the variable x to whatever items are in the file
+    output = []                          #this allows the appending of numbers to these variables later  
     finaloutput = []
     finalword = []
-    key = (int(input("What's the key: "))) #asks for a key to shift the numbers
+    key = (int(input("What's the key: ")))#asks for a key to shift the numbers
           
     for character in x:                  #a for loop for every character in the variable x
-        number = ord(character)       #turns each letter into a number
-        output.append(number)         #appends each number to the variable output 
+        number = ord(character)          #turns each letter into a number
+        output.append(number)            #appends each number to the variable output 
 
-    for character in output:            #a for loop for every character in output
+    for character in output:             #a for loop for every character in output
         character = int(character) - int(key)#subtracts the key to the number that represents the letter from the encrypted message
-        finaloutput.append(character) #appends each number to the variable finaloutput
+        finaloutput.append(character)    #appends each number to the variable finaloutput
 
     x = finaloutput
 
     for i in x:                          #a for loop for every i in the variable x
-        finalword.append(chr(i))               #turns the numbers back into letters and appends them to the variable finalword
-    y = finalword
-    newword = ''.join(y)               #turns the list of the letters into a string
+        finalword.append(chr(i))         #turns the numbers back into letters and appends them to the variable finalword
+    y = finalword                        #assigns the final word to variable y
+    newword = ''.join(y)                 #turns the list of the letters into a string
     print("Your decrypted message is: " + newword)                      #prints the decrypted message
 
     decryption.close                    #closes the file
@@ -169,6 +169,5 @@ if start == '1':
     encryption_time()
 if start == '2':
     decryption_time()
-
 
 
